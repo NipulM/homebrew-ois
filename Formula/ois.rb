@@ -5,20 +5,20 @@
 class Ois < Formula
   desc "Orchestrated Infrastructure Scaffolder - Generate production-ready Terraform for Cloud Infrastructure"
   homepage "https://github.com/NipulM/oisbase"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/NipulM/oisbase/releases/download/v0.1.0/oisbase_Darwin_x86_64.tar.gz"
-      sha256 "210cafcb0892f7bcaba712782892ef6c80a2ffc5113e61967e7524367803b0c4"
+      url "https://github.com/NipulM/oisbase/releases/download/v0.1.1/oisbase_Darwin_x86_64.tar.gz"
+      sha256 "621df82e423c138d4bb1588e0fec898a5f8401a58400b2813fe9a9f9850f0e86"
 
       def install
         bin.install "ois"
       end
     end
     on_arm do
-      url "https://github.com/NipulM/oisbase/releases/download/v0.1.0/oisbase_Darwin_arm64.tar.gz"
-      sha256 "cfaf89c4ac2eb3b5ec4387f8682bdba5f4563ad38007c03afda20dc7ec5b3264"
+      url "https://github.com/NipulM/oisbase/releases/download/v0.1.1/oisbase_Darwin_arm64.tar.gz"
+      sha256 "364a5d28ce4bcc12b0671fd25298d1f9fe33c5d3ddc2416ce603cb6c5ff62f80"
 
       def install
         bin.install "ois"
@@ -29,8 +29,8 @@ class Ois < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NipulM/oisbase/releases/download/v0.1.0/oisbase_Linux_x86_64.tar.gz"
-        sha256 "7300dae95200e421facf80002b3aae653891f2e0fd1926364ae8c66fd1beaa0f"
+        url "https://github.com/NipulM/oisbase/releases/download/v0.1.1/oisbase_Linux_x86_64.tar.gz"
+        sha256 "c849ffad22c222fceca21effa38386b8ea5cf4e1ff635b2d99d4a188475d77e3"
 
         def install
           bin.install "ois"
@@ -39,8 +39,8 @@ class Ois < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NipulM/oisbase/releases/download/v0.1.0/oisbase_Linux_arm64.tar.gz"
-        sha256 "940ffc0d8b35408b545756b9edcf208e7c26432fbf26531e58802761954ef659"
+        url "https://github.com/NipulM/oisbase/releases/download/v0.1.1/oisbase_Linux_arm64.tar.gz"
+        sha256 "fc4b148f8d8545d8677ad80468a39ac75df7daabb985c1ef6c171e5a636c64e2"
 
         def install
           bin.install "ois"
