@@ -5,20 +5,20 @@
 class Ois < Formula
   desc "Orchestrated Infrastructure Scaffolder - Generate production-ready Terraform for Cloud Infrastructure"
   homepage "https://github.com/NipulM/oisbase"
-  version "0.2.0"
+  version "0.2.0-beta.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/NipulM/oisbase/releases/download/v0.2.0/oisbase_Darwin_x86_64.tar.gz"
-      sha256 "e5d6f4ef46b755e210b168328942d319ff651d5bfd5d8818f2a16697e6e400fb"
+      url "https://github.com/NipulM/oisbase/releases/download/v0.2.0-beta.1/oisbase_Darwin_x86_64.tar.gz"
+      sha256 "88b7f64792d7ab042a579ada5faa4f309dc4698f6b72dedb152cc93160b745b1"
 
       def install
         bin.install "ois"
       end
     end
     on_arm do
-      url "https://github.com/NipulM/oisbase/releases/download/v0.2.0/oisbase_Darwin_arm64.tar.gz"
-      sha256 "96d6eb3e18b453194d7203be341e4d43130f0a2c1f46d5399bf497d21b289e79"
+      url "https://github.com/NipulM/oisbase/releases/download/v0.2.0-beta.1/oisbase_Darwin_arm64.tar.gz"
+      sha256 "ffe35bf208ec4469b76635721751950ddc8bb6b23283319f274566c6fdecd6a3"
 
       def install
         bin.install "ois"
@@ -29,8 +29,8 @@ class Ois < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NipulM/oisbase/releases/download/v0.2.0/oisbase_Linux_x86_64.tar.gz"
-        sha256 "326f6425bc8a6e4065a50fb1931150ae493fc739ee7baf011c2f756fc7ae3fc4"
+        url "https://github.com/NipulM/oisbase/releases/download/v0.2.0-beta.1/oisbase_Linux_x86_64.tar.gz"
+        sha256 "aadeae574f1d29dc995982aeda0175e4e3727a813690a8b12c96f1b918a23fd6"
 
         def install
           bin.install "ois"
@@ -39,8 +39,8 @@ class Ois < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/NipulM/oisbase/releases/download/v0.2.0/oisbase_Linux_arm64.tar.gz"
-        sha256 "8cf784e99c145d51151858a5b291ab4a002f6985e78f9082912f10c27de1f92d"
+        url "https://github.com/NipulM/oisbase/releases/download/v0.2.0-beta.1/oisbase_Linux_arm64.tar.gz"
+        sha256 "449b478ecc63727c1ac4c5552c3f19ef6f468a4f5bfa57929fdce701abfd7bb8"
 
         def install
           bin.install "ois"
